@@ -20,17 +20,22 @@ for char in s:
 else:
     print("no non repeating character")
 
+#time and space complexity
+#0(n)
+
 #concepts on data structure
-#list : A list a collection of ordered,mutable,and allows duplicate values
-#set: a set is a collection of unordered,mutable and store unique values
-# dict: a dict is a collection of key value pairs which is ordered,and mutable and store duplicate value for keys
-# tuple: a tuple is a collection of orderded, unmutalbe,allow duplicates values.
+#list : A list a collection of ordered,mutable,and allows duplicate values ex: a=[1,2,3,4]
+#set: a set is a collection of unordered,mutable and store unique values ex a={1,2,3}
+# dict: a dict is a collection of key value pairs which is ordered,and mutable and store duplicate value for keys ex: a={1:"a",2:"b",c:"3"}
+# tuple: a tuple is a collection of orderded, unmutalbe,allow duplicates values. ex: a=(1,2,3)
 
 #1.If you need to store unique student IDs, which data structure would you choose and why?
 #i would use set because it store unique values.and it will check membership checking
 
 #2.If you need to store a student's name, email, and phone number together, which data structure would you choose and why?
 #i would use dictionary so that we can access the name value by using key name
+
+
 
 #dubugging challenge given problem
 student=["ravi","anil","kiran","suresh"]
