@@ -167,10 +167,8 @@ greater_than_20 = list(
 
 print("Numbers greater than 20:", greater_than_20)
 
-
-# ============================================================
 # 12. LAMBDA + sort()
-# ============================================================
+
 
 students = [
     ("Ravi", 85),
@@ -183,9 +181,8 @@ students.sort(key=lambda student: student[1])
 print("Students sorted by marks:", students)
 
 
-# ============================================================
 # 13. LAMBDA + map()
-# ============================================================
+
 
 numbers = [1, 2, 3, 4]
 
@@ -196,9 +193,9 @@ squares = list(
 print("Squares:", squares)
 
 
-# ============================================================
+
 # 14. POSITIONAL AND KEYWORD ARGUMENTS
-# ============================================================
+
 
 def student_info(name, age):
     print("Name:", name)
@@ -212,9 +209,9 @@ student_info("Ravi", 21)
 student_info(age=21, name="Ravi")
 
 
-# ============================================================
+
 # 15. * UNPACKING
-# ============================================================
+
 
 numbers = [10, 20, 30]
 
@@ -226,9 +223,8 @@ def add_three(a, b, c):
 print("Unpacking with *:", add_three(*numbers))
 
 
-# ============================================================
 # 16. ** UNPACKING
-# ============================================================
+
 
 student = {
     "name": "Ravi",
@@ -244,9 +240,8 @@ def print_student(name, age):
 print_student(**student)
 
 
-# ============================================================
 # 17. COMBINING NORMAL PARAMETER, *args AND **kwargs
-# ============================================================
+
 
 def example(name, *args, **kwargs):
     print("Name:", name)
@@ -263,9 +258,8 @@ example(
 )
 
 
-# ============================================================
 # 18. *args + DEFAULT PARAMETER
-# ============================================================
+
 
 def calculate_total(*prices, discount=0):
     total = sum(prices)
@@ -279,9 +273,8 @@ print(
 )
 
 
-# ============================================================
 # 19. **kwargs PRACTICAL EXAMPLE
-# ============================================================
+
 
 def create_user(name, age, **details):
     print("Name:", name)
@@ -300,9 +293,8 @@ create_user(
 )
 
 
-# ============================================================
 # 20. CLOSURE WITH CUSTOMIZED FUNCTIONS
-# ============================================================
+
 
 def create_multiplier(factor):
     def multiply(number):

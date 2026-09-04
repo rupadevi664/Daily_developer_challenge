@@ -3,9 +3,9 @@ Day 4 — Lists, Dictionaries, Functions & Real-World Logic
 """
 
 
-# =====================================================
+
 # 1. STUDENT MARKS ANALYZER
-# =====================================================
+
 
 def analyze_marks(students):
     highest_marks = max(students.values())
@@ -45,9 +45,9 @@ students = {
 analyze_marks(students)
 
 
-# =====================================================
+
 # 2. MUTABLE DEFAULT ARGUMENT — FIXED
-# =====================================================
+
 
 def add_student(name, students=None):
     if students is None:
