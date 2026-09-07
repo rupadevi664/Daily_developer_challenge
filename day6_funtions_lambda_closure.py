@@ -62,7 +62,8 @@ print("Sum:", calculate_sum(10, 20, 30, 40))
 
 
 # 5. **kwargs
-#create a display_profile **details accept any number of numbers and return the sum
+#create display_profile(**details) and display the supplied profile
+#*kwargs accept any number of parameters and return the sum
 
 def display_profile(**details):
     for key, value in details.items():
