@@ -37,3 +37,24 @@ print(students)
 students=["r","m","s"]
 students.reverse()
 print(students)
+
+#copy
+students=["r","m","s"]
+student=students.copy()
+print(student)
+
+#sort
+students=[4,1,2,3]
+students.sort()
+print(students)
+
+#set
+a={1,2,3,5,4,55,99}
+# a.add(123)
+# print(a)
+# a.pop()
+#print(a)
+# a.remove(1)
+# print(a)
+a.update({53,23,54,6887})
+print(a)
