@@ -7,45 +7,57 @@ with open("student.txt","w") as file:
     file.write("durga\n")
 print("students added succesfully")
 
-with open("student.txt","r") as file:
-    for students in file:
-        print(students.strip())
+# with open("student.txt","r") as file:
+#     for students in file:
+#         print(students.strip())
 
-#append
-with open("student.txt","a") as file:
-    file.write("vijay\n")
-    file.write("hii\n")
-    file.write("hello\n")
-print("Student appended succesfully")
+# #append
+# with open("student.txt","a") as file:
+#     file.write("vijay\n")
+#     file.write("hii\n")
+#     file.write("hello\n")
+# print("Student appended succesfully")
 
-#handling file not found KeyError
-try:
-    with open("unknown.txt","r") as file:
-        data=file.read()
-        print(data)
-except FileNotFoundError:
-    print("file not found")
+# #handling file not found KeyError
+# try:
+#     with open("unknown.txt","r") as file:
+#         data=file.read()
+#         print(data)
+# except FileNotFoundError:
+#     print("file not found")
 
-# handles errors vaild numbers,zero diviso=ion error,invalid operarion by persfoming calculation operation
-try:
-    num1=int(input("enter number:"))
-    num2=int(input("enter number:"))
-    operation=input("enter operation +,-,*,/")
+# # handles errors vaild numbers,zero diviso=ion error,invalid operarion by persfoming calculation operation
+# try:
+#     num1=int(input("enter number:"))
+#     num2=int(input("enter number:"))
+#     operation=input("enter operation +,-,*,/")
 
-    if operation=="+":
-        print("result",num1+num2)
-    elif operation=="-":
-        print("result",num1-num2)
-    elif operation=="*":
-        print("result",num1*num2)
-    elif operation=="/":
-        print("result",num1/num2)
+#     if operation=="+":
+#         print("result",num1+num2)
+#     elif operation=="-":
+#         print("result",num1-num2)
+#     elif operation=="*":
+#         print("result",num1*num2)
+#     elif operation=="/":
+#         print("result",num1/num2)
+#     else:
+#         raise ValueError("entered invalid operation") 
+# except ValueError:
+#         print("invalid number")
+# except ZeroDivisionError:
+#     print("can not divided by zero") 
+
+#validate age and raise error
+def validate_age(age):
+    if age<18:
+        print("invalid age")
     else:
-        raise ValueError("entered invalid operation") 
-except ValueError:
-        print("invalid number")
-except ZeroDivisionError:
-    print("can not divided by zero") 
+        print("valid age")
+try:
+    num=int(input("enter number"))
+    validate_age(num)
+except ValueError as e:
+    print("error",e)
 
 
 
