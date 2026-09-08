@@ -58,3 +58,14 @@ a={1,2,3,5,4,55,99}
 # print(a)
 a.update({53,23,54,6887})
 print(a)
+
+#operations
+s1={1,2,3,4,5}
+s2={1,2,3}
+
+print(s1.intersection(s2))
+print(s1.union(s2))
+print(s1.issubset(s2))
+print(s2.issubset(s1))
+print(s1.issuperset(s2))
+print(s1.difference(s2))
