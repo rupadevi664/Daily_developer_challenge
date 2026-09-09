@@ -89,3 +89,10 @@ with open("student.txt","w") as file:
 # finally: it runs if contains errror or not
 # keyerror,indexerror,typeerror-when we add to different strings,valueerror,attributeerrror
 # import error,zero division error,file not found errror 
+
+#writelines:writes mulitlple strings as list
+#write :writes in single line
+#read:read entire lines as a string
+#readline: read one line once
+#readlines:read multilple lines as a list
+
