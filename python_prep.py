@@ -1,4 +1,5 @@
 #largest number:
+from sys import int_info
 num=[1,2,3,4,5]
 largest=num[0]
 for n in num:
@@ -44,3 +45,35 @@ if original==reverse:
     print("palindrome")
 else:
     print("not palindrome")
+
+#even odd
+n=[3,7,9,2,6]
+even=0
+odd=0
+for num in n:
+    if num%2==0:
+        even+=1
+    else:
+        odd+=1
+print(even)
+print(odd)
+
+#sum
+n=123334
+total=0
+while n>0:
+    digit=n%10
+    total=total+digit
+    n=n//10
+print(total)
+
+#count
+n=12
+count=0
+if count==1:
+    print(1)
+while n>0:
+    count=count+1
+    n=n//10
+print(count)
+
