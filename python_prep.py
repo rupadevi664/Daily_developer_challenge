@@ -80,7 +80,7 @@ print(count)
 #count prime num
 n=7
 count=0
-for i in n:
+for i in range(1,n+1):
     if n%i==0:
         count+=1
 if count==2:
