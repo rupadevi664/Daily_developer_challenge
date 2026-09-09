@@ -87,3 +87,12 @@ if count==2:
     print("prime")
 else:
     print("not prime")
+
+#vowels
+a="stringaeiou"
+vowels=0
+for char in a:
+    if char in "aeiouAEIOU":
+       vowels+=1
+print(vowels)
+
