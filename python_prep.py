@@ -96,3 +96,9 @@ for char in a:
        vowels+=1
 print(vowels)
 
+a="aaeerupa"
+unique=[]
+for char in a:
+    if char not in unique:
+        unique.append(char)
+print(unique)
