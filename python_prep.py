@@ -26,3 +26,10 @@ for num in n:
     if num<smallest:
         smallest=num
 print(smallest)
+
+#reverse string
+a="rupa"
+reverse=""
+for char in a:
+    reverse=char+reverse
+print(reverse)
