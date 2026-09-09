@@ -297,4 +297,49 @@ else:
     print("not prime")
 
 #count
+n=12345
+count=0
+while n>0:
+    count+=1
+    n=n//10
+print(count)
+
+#sum
 n=1234
+sum=0
+while n>0:
+    digit=n%10
+    sum= sum+digit
+    n=n//10
+print(sum)
+
+#fact
+a=5
+fact=1
+for i in range(1,a+1):
+    fact*=i
+print(fact)
+
+#fibonnce
+n=5
+a=0
+b=1
+for i in range(n):
+    print(a,end="")
+    c=a+b
+    a=b
+    b=c
+print()
+#moves zero
+a=[10,203,334,23,0,0,2,0,2,0,2]
+result=[]
+for i in a:
+    if i!=0:
+        result=result+[i]
+for i in a:
+    if i==0:
+        result=result+[i]
+print(result)
+
+#missing
+
