@@ -33,3 +33,14 @@ reverse=""
 for char in a:
     reverse=char+reverse
 print(reverse)
+
+#palindrome
+n="madam"
+original=n
+reverse=""
+for char in n:
+    reverse=char+reverse
+if original==reverse:
+    print("palindrome")
+else:
+    print("not palindrome")
