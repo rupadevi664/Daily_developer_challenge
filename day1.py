@@ -9,13 +9,11 @@ for char in s:
         freq[char]+=1
     else:
         freq[char]=1
+
 #repeating 
-for char in s:
-    if char==" ":
-        continue
     if char in freq:
-        freq[char]==1
-        print("non repeating character",char)
+        freq[char]=1
+        print("repeating character",char)
         break
 else:
     print("no non repeating character")
