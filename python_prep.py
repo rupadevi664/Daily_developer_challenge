@@ -70,8 +70,7 @@ print(total)
 #count
 n=12
 count=0
-if count==1:
-    print(1)
+
 while n>0:
     count=count+1
     n=n//10
@@ -95,10 +94,47 @@ for char in a:
     if char in "aeiouAEIOU":
        vowels+=1
 print(vowels)
-
+#remove duplicates
 a="aaeerupa"
 unique=[]
 for char in a:
     if char not in unique:
         unique.append(char)
 print(unique)
+
+
+#linear search
+n=[10,20,23,43,46]
+search=20
+for num in range(len(n)):
+    if n[num]==search:
+        print("search found",i)
+        break
+else:
+    print("not found")
+
+#frequency of elements
+num=[1,1,1,2,3,4,56,67654,12,33,55]
+target=1
+count=0
+for n in num:
+    if n==target:
+       count+=1
+print(count)
+#factorial
+n=5
+fact=1
+for num in range(1,n+1):
+    fact*=num
+print(fact)
+
+#fabonocci
+n=9
+a=0
+b=1
+for i in range(n):
+    print(a,end=",")
+    c=a+b
+    a=b
+    b=c
+print()
