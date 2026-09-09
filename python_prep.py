@@ -342,4 +342,14 @@ for i in a:
 print(result)
 
 #missing
+a=[1,2,3,4,5,7]
+n=7
+excepted=0
+actual=0
+for i in range(1,n+1):
+    excepted=excepted+i
+for i in a:
+    actual=actual+i
+missing=excepted-actual
+print(missing)
 
