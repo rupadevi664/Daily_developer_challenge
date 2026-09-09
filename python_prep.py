@@ -121,6 +121,8 @@ for n in num:
     if n==target:
        count+=1
 print(count)
+
+
 #factorial
 n=5
 fact=1
@@ -138,3 +140,16 @@ for i in range(n):
     a=b
     b=c
 print()
+
+num1=[12,34,54,762,344,72,90]
+max=num1[0]
+min=num1[0]
+for n in num1:
+    if n>max:
+        max=n
+    elif n<min:
+        min=n
+print(max)
+print(min)
+
+#
